@@ -5,6 +5,7 @@
     }
     body{
         font-family: 'Poppins', sans-serif;
+        background: #f7f7f7;
         }
     header{
         display: flex;
@@ -113,10 +114,7 @@
     width: 100%;
     margin: 20px;
 }
-
-
-
- .contactcontent {
+.contactcontent {
       width: 100%;
       margin: 0 auto;
       padding: 20px;
@@ -433,28 +431,27 @@ footer i:hover {
 footer a:hover {
     color: #f56c6c;
 }
- /* Mobile Responsive Styles */
-        @media (max-width: 768px) {
-            header {
-                position: fixed;
-                flex-wrap: wrap;
-                height: auto;
-                padding: 10px 15px;
-            }
-            #mobileno{
-                display: none;
-            }
-            #logo {
-                width: 80px;
-            }
-            .menu-toggle {
-                display: block;
-                position: fixed;
-                width: 15%;
-                background: none;
-                border: none;
-                right: 5px;
-            }
+@media (max-width: 768px) {
+header {
+        position: fixed;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 15px;
+}
+#mobileno{
+        display: none;
+}
+#logo {
+        width: 80px;
+}
+.menu-toggle {
+        display: block;
+        position: fixed;
+        width: 15%;
+        background: none;
+        border: none;
+        right: 5px;               
+}
             .menu-toggle a:hover{
                 background-color:#1877f2;
             }
@@ -537,12 +534,14 @@ footer a:hover {
                 font-size: 20px;
             }
             .partnerscontent {
-                gap: 10px;
-                flex-shrink: 3;
+                gap: 15px;
+                justify-content: center;
+                overflow-x: auto;
             }
             .partneritem {
-                min-width: 120px;
+                min-width: 80px;
                 max-width: 150px;
+                flex: 0 0 auto;
             }
             footer {
                 flex-direction: column;
